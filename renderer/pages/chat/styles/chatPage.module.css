@@ -1,0 +1,193 @@
+.allContainer{
+  display: grid;
+  place-items: center;
+  background-color: white;
+  height: 100vh;
+  transform-origin: 0% 0%;
+  background-color: rgb(35, 48, 68);
+  width: 100vw;
+  display: flex;
+}
+.chatContainer{
+  background-color: #ededed;
+  display: flex;
+  height: 100%;
+  width: 100%;  
+  overflow: hidden;
+  position: relative;
+  border-top: 1px solid lightgrey;
+}
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+  position: relative;
+  background-color: white;
+  border-right: 1px solid rgba(35, 48, 68, 0.552)
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 12px;
+  background-color: rgb(35, 48, 68);
+  color: whitesmoke;
+}
+
+.leftSidebarHeader{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.rightSidebarHeader{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  max-width: 120px;
+}
+
+
+.sidebarSearch {
+  display: flex;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 10px;
+  border-right: 1px solid lightgrey;
+}
+
+.sidebarSearchContainer {
+  display: flex;
+  align-items: center;
+  background-color: white;
+  width: 100%;
+  height: 35px;
+  box-shadow: 0px 0px 8px 0px #00000016;
+  padding: 10px;
+  border-radius: 20px;
+  padding-right: 13px;
+}
+
+.sidebarSsearchContainer > .MuiSvgIcon-root {
+  color: grey;
+  padding: 10px;
+  box-sizing: content-box;
+}
+
+.sidebarSearchContainer > input {
+  font-size: 14px;
+  font-weight: 400;
+  border: none;
+  margin-left: 0px;
+  width: 100%;
+}
+
+.sidebarSearchContainer > input:focus {
+  outline: none;
+}
+
+.globalChatContainer {
+  flex: 1;
+  overflow: auto;
+  padding: 20px; 
+  background-color: #f5f5f5;
+  height: 77vh;
+}
+.interdepartmentChatContainer {
+  /* flex: 1; */
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 20px; 
+  background-color: #f5f5f5;
+  height: 77vh;
+}
+
+.sidebarAddChat {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-color: #1976d2 !important;
+  border-radius: 50%;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 4px 4px 20px 0px rgba(0, 0, 0, 0.281);
+  transform: translateZ(456px);
+}
+
+.sidebarAddChat button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.sidebarAddChat .MuiSvgIcon-root {
+  transform: scale(1.3);
+  color: white;
+}
+
+.sidebarChat {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  border-bottom: 1px solid #f6f6f6;
+  width: 100%;
+  max-height: 87px;
+  transition: opacity 400ms;
+}
+
+.sidebarChat:active {
+  background-color: #ebebeb;
+  transition: background-color 50ms;
+}
+
+.avatarContainer {
+  position: relative;
+}
+
+.sidebarChatInfo > h2 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.sidebarChatInfo p {
+  align-items: center;
+  color: #6f6f6f;
+  font-weight: 400;
+}
+
+.sidebarChatInfo span {
+  margin-left: 2px;
+  color: #6f6f6f;
+  vertical-align: middle;
+}
+
+.sidebarChatInfo p svg {
+  color: #868686;
+  vertical-align: middle;
+}
+
+.sidebarChatInfo p,
+.sidebarChatInfo h2,
+.sidebarChatInfo p span {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.sidebarChatInfo {
+  margin-left: 15px;
+}
+
+
+.link{
+  /* background-color: lightgray; */
+  border-radius: 10rem;
+  margin-block: 1rem;
+  padding-block: 0.5rem;
+}
